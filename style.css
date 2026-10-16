@@ -1,0 +1,122 @@
+:root {
+  --color-white: #fff;
+  --color-grey: #c4c4c4;
+  --color-dark: #222;
+  --color-primary: #444cf7;
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Courier New", Courier, monospace;
+}
+/* End CSS Reset */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #e5e5f7;
+  background-image: radial-gradient(#444cf766 0.8px, #e5e5f7 0.8px);
+  background-size: 10px 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 36rem;
+  background-color: var(--color-white);
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 2rem 5rem rgba(68, 76, 247, 0.25);
+}
+
+.top {
+  height: 12rem;
+  background: linear-gradient(135deg, #444cf7, #8e94fb);
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem 2.4rem;
+  text-align: center;
+}
+
+.pic {
+  width: 12rem;
+  height: 12rem;
+  margin-top: -6rem;
+  border: 0.5rem solid var(--color-white);
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.pic:hover {
+  transform: scale(1.05);
+}
+
+.title {
+  margin-top: 1.6rem;
+  font-size: 2.4rem;
+  color: var(--color-dark);
+}
+
+.profession {
+  margin-top: 0.6rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #777;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.6rem 2rem;
+  border-top: 1px solid var(--color-grey);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-3px);
+}
